@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <form class="input">
+    <div class="container">
+        <div class="mainform">
+            <h3>Personal Information</h3>
+            <label for="name">Name:</label><br>
+            <input type="text" name="Name"required><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age"><br><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="text" name="phone" required><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="Email" required><br><br>
+            <label for="address">Address:</label><br>
+            <textarea  name="address" id="address" required></textarea><br><br>
+            <label for="profilePicture">Profile Picture</label><br><br>
+            <input type="file" id ="profilePicture" accept="image/*" required><br><br>
+        </div>
+        <div class="links">
+            <h3>Important Links</h3>
+            <label for="github">Github:</label><br>
+            <input type="text" name="git" required><br><br>
+            <label for="linkedin">Linked-in:</label><br>
+            <input type="text" name="link" required><br><br>
+        </div>
+        <div class="professional">
+            <h3>Professional Information</h3>
+            <div id="Education">
+                <label for="education">Education:</label><br>
+                <textarea name="ed" class="ed" required></textarea><br>
+            </div>
+            <br>
+            <label for="skills">Skills:</label><br>
+            <textarea name="skills" id="skills" required></textarea><br><br>
+            <div id="workexperience">
+                <label for="workexperience">Work Experience:</label><br>
+                <textarea name="wex" class="wex" required></textarea><br>
+            </div>
+            <br>
+        </div>
+    </div>
+    </form>
+    <div class="output">
+
+    </div>
+    <div class="btn">
+        <button onclick="toggle()">Edit / Preview</button>
+    </div>
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
+ <script src="script.js"></script>   
+</body>
+</html>

@@ -114,7 +114,7 @@ input:focus,textarea:focus {
 @media screen and (max-width:425px)
 {
     .personal{
-        font-size: 10px;
+        font-size: 4px;
     }
 }
 
